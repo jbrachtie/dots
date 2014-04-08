@@ -18,10 +18,12 @@ set autoindent
 set smarttab
 filetype indent on
 
-set tabstop=5
-set shiftwidth=5
+set tabstop=3
+set shiftwidth=3
 set shiftround
 set noexpandtab
+set list
+set listchars=tab:\|\ "derp
 
 " always show the mode and current command
 set showmode
@@ -62,4 +64,5 @@ hi CursorLineNr ctermfg=10 ctermbg=0 cterm=none
 hi CursorLine ctermfg=none ctermbg=0 cterm=none
 hi Visual ctermfg=none ctermbg=10 cterm=none
 hi MatchParen ctermfg=none ctermbg=10 cterm=none
-
+hi NonText ctermfg=8 ctermbg=none cterm=none
+hi SpecialKey ctermfg=8 ctermbg=none cterm=none
