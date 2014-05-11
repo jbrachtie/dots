@@ -18,6 +18,7 @@ set autoindent
 set smarttab
 filetype indent on
 
+" tab settings
 set tabstop=3
 set shiftwidth=3
 set shiftround
@@ -47,6 +48,19 @@ if exists("syntax_on")
 	syntax reset
 endif
 hi clear
+
+" save folds
+set viewoptions-=options
+augroup vimrc
+	autocmd BufWritePost *
+				\   if expand('%') != '' && &buftype !~ 'nofile'
+				\|      mkview
+				\|  endif
+	autocmd BufRead *
+				\   if expand('%') != '' && &buftype !~ 'nofile'
+				\|      silent loadview
+				\|  endif
+augroup END
 
 hi LineNr ctermfg=8 ctermbg=none cterm=none
 hi Statement ctermfg=2 ctermbg=none cterm=none 
