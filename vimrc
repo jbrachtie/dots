@@ -74,8 +74,8 @@ hi Error ctermfg=3 ctermbg=none cterm=none
 hi Search ctermfg=none ctermbg=8 cterm=none
 hi IncSearch ctermfg=9 ctermbg=8 cterm=none
 hi ErrorMsg ctermfg=3 ctermbg=none cterm=none
-hi CursorLineNr ctermfg=10 ctermbg=0 cterm=none
-hi CursorLine ctermfg=none ctermbg=0 cterm=none
+hi CursorLineNr ctermfg=10 ctermbg=none cterm=none
+hi CursorLine ctermfg=none ctermbg=none cterm=none
 hi Visual ctermfg=none ctermbg=10 cterm=none
 hi MatchParen ctermfg=none ctermbg=10 cterm=none
 hi NonText ctermfg=8 ctermbg=none cterm=none
