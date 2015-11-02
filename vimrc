@@ -1,3 +1,6 @@
+" make the dumb backspace/delete work right
+set backspace=indent,eol,start
+
 " turn off vi compatibility
 set nocompatible
 
